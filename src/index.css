@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HandiSketch Art Company Design System - Minimalist sketch-inspired palette
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Light Theme - Black and White Sketchy */
+    --background: 0 0% 97%;
+    --foreground: 0 0% 10%;
+
+    /* Card components - sketchy white */
+    --card: 0 0% 99%;
+    --card-foreground: 0 0% 10%;
+
+    /* Interactive elements */
+    --popover: 0 0% 99%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Primary - deep black */
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 99%;
+    --primary-accent: 0 0% 25%;
+
+    /* Secondary - light gray sketch tones */
+    --secondary: 0 0% 94%;
+    --secondary-foreground: 0 0% 10%;
+
+    /* Muted tones - sketchy grays */
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent - medium gray */
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 10%;
+
+    /* System colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 99%;
+
+    /* Borders and inputs - sketchy lines */
+    --border: 0 0% 85%;
+    --input: 0 0% 92%;
+    --ring: 0 0% 10%;
+
+    /* Custom sketchy colors */
+    --sketch-light: 0 0% 96%;
+    --sketch-medium: 0 0% 85%;
+    --sketch-dark: 0 0% 25%;
+    --canvas: 0 0% 98%;
+    --charcoal: 0 0% 12%;
+
+    /* Sketchy gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--canvas)), hsl(var(--sketch-light)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--sketch-light)));
+    --gradient-sketch: linear-gradient(45deg, transparent 25%, hsl(var(--sketch-medium) / 0.15) 25%, hsl(var(--sketch-medium) / 0.15) 50%, transparent 50%, transparent 75%, hsl(var(--sketch-medium) / 0.15) 75%);
+
+    /* Sketchy shadows */
+    --shadow-soft: 0 2px 8px hsl(var(--sketch-dark) / 0.1);
+    --shadow-medium: 0 4px 16px hsl(var(--charcoal) / 0.15);
+    --shadow-strong: 0 8px 32px hsl(var(--charcoal) / 0.2);
+
+    /* Border radius */
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Theme - Purple background with specified colors */
+    --background: 280 100% 25%;
+    --foreground: 28 65% 70%; /* #e8a879 */
+
+    --card: 280 90% 30%;
+    --card-foreground: 28 65% 70%; /* #e8a879 */
+
+    --popover: 280 100% 25%;
+    --popover-foreground: 28 65% 70%;
+
+    --primary: 28 65% 70%; /* #e8a879 */
+    --primary-foreground: 280 100% 25%;
+    --primary-accent: 28 44% 93%; /* #f7ede2 */
+
+    --secondary: 280 50% 35%;
+    --secondary-foreground: 28 65% 70%;
+
+    --muted: 280 40% 32%;
+    --muted-foreground: 28 44% 93%; /* #f7ede2 */
+
+    --accent: 280 40% 35%;
+    --accent-foreground: 28 65% 70%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 28 65% 70%;
+
+    --border: 28 44% 93%; /* #f7ede2 stroke color */
+    --input: 280 50% 32%;
+    --ring: 28 44% 93%; /* #f7ede2 */
+
+    /* Custom sketch colors for dark mode */
+    --sketch-light: 28 44% 93%; /* #f7ede2 */
+    --sketch-medium: 28 65% 70%; /* #e8a879 */
+    --sketch-dark: 280 50% 35%;
+    --canvas: 280 100% 22%;
+    --charcoal: 280 40% 28%;
+
+    /* Dark mode gradients with purple theme */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--canvas)), hsl(280 60% 35%));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(280 50% 32%));
+    --gradient-sketch: linear-gradient(45deg, transparent 25%, hsl(28 44% 93% / 0.1) 25%, hsl(28 44% 93% / 0.1) 50%, transparent 50%, transparent 75%, hsl(28 44% 93% / 0.1) 75%);
+
+    /* Dark mode shadows */
+    --shadow-soft: 0 2px 8px hsl(280 40% 10% / 0.4);
+    --shadow-medium: 0 4px 16px hsl(280 40% 8% / 0.5);
+    --shadow-strong: 0 8px 32px hsl(280 40% 6% / 0.6);
+
+    --sidebar-background: 300 100% 25%;
+    --sidebar-foreground: 28 65% 70%;
+    --sidebar-primary: 28 65% 70%;
+    --sidebar-primary-foreground: 300 100% 25%;
+    --sidebar-accent: 300 40% 32%;
+    --sidebar-accent-foreground: 28 65% 70%;
+    --sidebar-border: 28 44% 93%;
+    --sidebar-ring: 28 44% 93%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Professional button animations */
+  .btn-animate {
+    @apply transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-lg active:scale-95;
+  }
+  
+  /* Card hover animations */
+  .card-animate {
+    @apply transition-all duration-300 ease-out hover:shadow-medium hover:-translate-y-1;
+  }
+  
+  /* Text animations with stagger effect */
+  .text-animate-1 {
+    animation: slide-up 0.8s ease-out 0.1s both;
+  }
+  
+  .text-animate-2 {
+    animation: slide-up 0.8s ease-out 0.3s both;
+  }
+  
+  .text-animate-3 {
+    animation: slide-up 0.8s ease-out 0.5s both;
+  }
+  
+  /* Number counter animation */
+  .number-animate {
+    @apply animate-counter-up;
+  }
+  
+  /* Large brand text styling like reference */
+  .brand-text {
+    font-size: clamp(3rem, 8vw, 8rem);
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    background: linear-gradient(135deg, hsl(var(--primary-accent)), hsl(var(--primary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    line-height: 0.9;
+  }
+}
