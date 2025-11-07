@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# HandiSketchWeb
+HandiSketch website  repo 
+=======
+>>>>>>> 8ea0e298a1eeee4818b7059103d681a52c1fcf20
 # Welcome to your Lovable project
 
 ## Project info
@@ -71,3 +78,7 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+<<<<<<< HEAD
+=======
+>>>>>>> 744ba59 (Initial commit)
+>>>>>>> 8ea0e298a1eeee4818b7059103d681a52c1fcf20
