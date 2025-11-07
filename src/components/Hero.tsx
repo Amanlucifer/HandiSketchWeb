@@ -32,7 +32,7 @@ const Hero = () => {
 
             {/* Schedule a Call booking */}
             <a
-              href="https://calendly.com/handisketch959/30min"
+              href="https://calendly.com/sales-handisketch/30min"
               target="_blank"
               rel="noopener noreferrer"
             >
